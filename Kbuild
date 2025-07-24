@@ -42,8 +42,12 @@ dtbo-y += sun-audio.dtbo \
                 tuna-audio-mtp-qmp1000.dtbo \
                 tuna-audio-qrd.dtbo \
                 tuna-audio-rcm.dtbo
-endif
 
+#OPLUS_DTS_OVERLAY start
+dtbo-y += oplus/dodge-23821-audio-sun-overlay.dtbo
+dtbo-y += oplus/hummer-24811-audio-sun-overlay.dtbo
+#OPLUS_DTS_OVERLAY end
+endif
 
 ifeq ($(CONFIG_ARCH_KERA), y)
 dtbo-y += kera-audio.dtbo \
